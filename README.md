@@ -1,7 +1,9 @@
 # Inserting and selecting data from Oracle DB via PHP
+
 This project is a simple example of how to connect to an Oracle DB through PHP. Connection string is used to connect, a web form is used to collect user data and insert into DB table, then dynamically retrieves all data from DB table and iis echoed in html table on webpage.
 
 Note: This project is focused on use in Windows 64bit, however 32 bit versions of all software used can also be utilised.
+Note: All files should be placed in a folder, and 'style.css' placed in its own folder within, named css. Alternatively, amend the link statement in head section of index.php.
 
 ### Prerequisites
 
