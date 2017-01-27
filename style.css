@@ -1,0 +1,49 @@
+body{
+    padding-left: 5%;
+    background-color: gray;
+    font-size: 20px;
+    color: lightblue;
+}
+
+h1{
+    font-size: 70px;
+    text-align: center;
+}
+
+h3{float: center;}
+
+.form-div{
+   float: left;
+    width: 15%;
+    padding: 5px;
+    color: lightblue;
+    font-size: 18px;
+    padding-left: 5%;
+}
+
+input{
+    width: 100%;
+}
+
+.results{
+    padding-right: 5%;
+    padding-left: 25%;
+}
+
+table {
+   
+    width: 80%;
+   padding: 0.5em;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+     font-size: 18px;
+    
+}
+
+td{
+    border: 1px solid white;
+    border-radius: 1px;
+    text-align: center;
+}
+
