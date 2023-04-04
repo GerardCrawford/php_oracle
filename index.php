@@ -104,8 +104,8 @@ oci_free_statement($insert);
     <div class="results">
     <?PHP
 
-//as in above PHP parse and execute SQL statement, this time selecting all existing data from MYBOOKS table.
-$stid = oci_parse($conn, 'SELECT * FROM MYBOOKS order by MYBOOKS.title ASC');
+//parse and execute SQL statement to select all existing data from MYBOOKS table.
+$stid = oci_parse($conn, 'SELECT * FROM MYBOOKS ORDER BY MYBOOKS.title ASC');
 oci_execute($stid);
 
 //Fetch data, and print out and populate table
@@ -113,7 +113,7 @@ echo "<table>\n";
 while ($row = oci_fetch_array($stid, OCI_ASSOC+OCI_RETURN_NULLS)) {
     echo "<tr>\n";
     foreach ($row as $item) {
-        echo "    <td>" . ($item !== null ? htmlentities($item, ENT_QUOTES) : "&nbsp;") . "</td>\n";
+        echo "    <td>" . ($item !== null ? htmlspecialchars($item, ENT_QUOTES) : "&nbsp;") . "</td>\n";
     }
     echo "</tr>\n";
 }
